@@ -27,6 +27,13 @@ def divide(a, b):
         raise ValueError("Cannot divide by zero!")
     return a / b
 
+def modulo(a, b):
+    """Return the remainder when a is divided by b."""
+    if b == 0:
+        raise ValueError("Cannot divide by zero!")
+    return a % b
+
+
 def power(a, b):
     """Raise a to the power of b."""
     return a ** b
@@ -55,8 +62,13 @@ def main():
             result = multiply(num1, num2)
         elif operator == "/":
             result = divide(num1, num2)
+
         elif operator == "^":
             result = power(num1, num2)
+
+        elif operator == "%":
+            result = modulo(num1, num2)
+
         else:
             print("Invalid operator!")
             return
