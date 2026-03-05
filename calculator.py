@@ -3,7 +3,6 @@ Simple Calculator Application
 A basic calculator that performs arithmetic operations.
 
 
-
 """
 
 
@@ -27,6 +26,11 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero!")
     return a / b
+
+def power(a, b):
+    """Raise a to the power of b."""
+    return a ** b
+  
 
 def main():
     """Main function to run the calculator."""
